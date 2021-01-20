@@ -1,0 +1,38 @@
+.layout{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;  
+}
+.layout__block{
+  text-align: center;
+
+  position: relative;
+  
+}
+.layout__block__title{
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+
+  padding-top: 45px;
+}
+.layout__block__text{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.layout__block__text::after{  
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -40px;
+  left: 570px;
+  background-color: $text-select;
+  
+}

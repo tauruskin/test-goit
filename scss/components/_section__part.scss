@@ -1,0 +1,40 @@
+
+.section__part{
+  text-align: center;
+}
+
+.section__part__title{
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.section__part__text{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+}
+
+.section__part__text::after{  
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -40px;
+  left: 570px;
+  background-color: $text-select;
+  
+}
+
+.section__part__description{
+  font-size: 15px;
+  color: $primary-color;
+  margin-top: 90px;
+  line-height: 1.6;
+}
+
+.section__part__list{
+  display: flex;
+  margin-top: 86px;
+}
