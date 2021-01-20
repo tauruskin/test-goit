@@ -267,14 +267,44 @@ a {
 }
 
 .card {
-
-  width: 100%;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 82px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  position: relative;
   &:last-child {
     margin-right: 0;
   }
 }
+.card:hover,
+.card:focus {
+  cursor: pointer;
+}
+// .card__wrap {  
+//   position: relative;
+//   z-index: 2;
+// }
+
+// .card__wrap:hover,
+// .card__wrap:focus {
+//   width: 100%;
+//   background-image: linear-gradient(
+//     to top left,
+//     $rgba-yellow,
+//     $rgba-red     
+//     );
+//     position: relative;
+//     z-index: 2;
+//     cursor: pointer;
+//     opacity: 0.4;
+//     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .card:hover,
+// .card:focus {
+//   cursor: pointer;
+//   opacity: 0.4;
+// }
 
 .card__name{
   font-family: "Montserrat", sans-serif;
@@ -288,6 +318,25 @@ a {
   font-style: italic;
   color: $primary-color;
   opacity: 0.8;
+}
+
+.social-network {
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  top: 206px;
+  left: 90px;
+}
+
+.social-network__item {
+  
+}
+.social-network__link{
+  padding: 15px;
+  background-color: $socials-yellow;
+  margin-left: 1px;
+  display: flex;
+  fill: $text-select;
 }
 
 // Footer

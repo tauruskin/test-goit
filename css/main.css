@@ -280,13 +280,23 @@ a {
 }
 
 .card {
-  width: 100%;
   margin-right: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 82px;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  position: relative;
 }
 
 .card:last-child {
   margin-right: 0;
+}
+
+.card:hover,
+.card:focus {
+  cursor: pointer;
 }
 
 .card__name {
@@ -301,6 +311,28 @@ a {
   font-style: italic;
   color: #999999;
   opacity: 0.8;
+}
+
+.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 206px;
+  left: 90px;
+}
+
+.social-network__link {
+  padding: 15px;
+  background-color: #FCE38A;
+  margin-left: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  fill: #f38181;
 }
 
 .footer {
