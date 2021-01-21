@@ -290,6 +290,7 @@ a {
   font-size: 30px;
   font-weight: 700;
   position: relative;
+  text-transform: uppercase;
 }
 
 .section__part__text::after {
