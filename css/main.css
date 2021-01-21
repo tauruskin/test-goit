@@ -375,7 +375,11 @@ a {
   z-index: 3;
   top: 460px;
   left: -10px;
-  opacity: 0.9;
+  opacity: 1;
+  opacity: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-network__link {
