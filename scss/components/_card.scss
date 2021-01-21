@@ -38,9 +38,8 @@
     $rgba-yellow, 
     $rgba-red
     );
-  // background-color: $svg-green;
+  box-shadow: 10px 10px $svg-green;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   .card:hover &,
   .card:focus & {
     cursor: pointer;
